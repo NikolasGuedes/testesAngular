@@ -1,0 +1,7 @@
+<section>
+  <p *ngIf="monstrarConteudo">Estamos monstrando isso porque foi permitido</p>
+  <p *ngIf="validacaoNome == 'Nikolas'; else nomeInvalido">O Nome é Nikolas</p>
+  <ng-template #nomeInvalido>
+    <p>Nome Invalido</p>
+  </ng-template>
+</section>

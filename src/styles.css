@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+
+  background: #ecf1ff;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+
+
+}
+
+
+section {
+  width: 90%;
+  margin: auto;
+  background-color: #4B70F5;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  border-radius: 1em;
+  margin-top: 1em;
+}

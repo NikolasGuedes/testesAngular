@@ -1,0 +1,15 @@
+<section>
+  <h2>Two-Away-data-binding</h2>
+  <form>
+    <input
+      type="text"
+      [(ngModel)]="name"
+      name="name"
+      placeholder="digite o nome"
+    />
+    <input type="submit" value="enviar" (click)="EnviaFormulario()" />
+  </form>
+  <div>
+    <p>{{ textoGerado }}</p>
+  </div>
+</section>

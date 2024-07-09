@@ -1,0 +1,11 @@
+h1{
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: aliceblue;
+}
+
+p{
+  color: #1600bb;
+}

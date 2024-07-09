@@ -1,0 +1,30 @@
+<Section>
+  <h2>Adicione um Animal na lista:</h2>
+  <form>
+    <input
+      type="text"
+      [(ngModel)]="nome"
+      name="nome"
+      placeholder="Nome do animal"
+    />
+    <input
+      type="text"
+      [(ngModel)]="especie"
+      name="especie"
+      placeholder="especie do animal"
+    />
+    <input
+      type="number"
+      [(ngModel)]="idade"
+      name="idade"
+      placeholder="idade do animal"
+    />
+    <button (click)="criaNovoAnimal()">Cadastrar animal</button>
+  </form>
+  <div>
+    <h1>Informações:</h1>
+    <p>Animal:{{ nome }}</p>
+    <p>especie:{{ especie }}</p>
+    <p>idade: {{ idade }}</p>
+  </div>
+</Section>

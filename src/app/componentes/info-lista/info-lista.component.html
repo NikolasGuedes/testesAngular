@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let animal of listaAnimais">
+    {{ animal.nome }} - {{ animal.especie }}
+    <button (click)="MostrarIdadeAnimal(animal)">Revelar Idade</button>
+    <button (click)="RemoveAnimalLista(animal)">Deletar Animal</button>
+  </li>
+  <h3>{{textoDetalhes}}</h3>
+</ul>
+
+<app-adicionar-animal (ColocaNovoAnimalLista) = "onColocaNovoAnimalLista($event)"></app-adicionar-animal>
