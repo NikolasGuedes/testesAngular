@@ -7,6 +7,7 @@ import { EmmiterComponent } from './componentes/emmiter/emmiter.component';
 import { ListRenderComponent } from './componentes/list-render/list-render.component';
 import { PipesComponent } from './componentes/pipes/pipes.component';
 import { TwoWayBindingComponent } from './componentes/two-way-binding/two-way-binding.component';
+import { DetalhesItemComponent } from './componentes/detalhes-item/detalhes-item.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: "emmiter", component: EmmiterComponent},
   {path: "list-render", component: ListRenderComponent},
   {path: "pipe", component: PipesComponent},
-  {path: "binding", component: TwoWayBindingComponent}
+  {path: "binding", component: TwoWayBindingComponent},
+  {path: "list-render/:id", component: DetalhesItemComponent}
 ];
 
 @NgModule({

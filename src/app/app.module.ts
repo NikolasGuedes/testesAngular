@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { InfoListaComponent } from './componentes/info-lista/info-lista.componen
 import { AdicionarAnimalComponent } from './componentes/adicionar-animal/adicionar-animal.component';
 import { PipesComponent } from './componentes/pipes/pipes.component';
 import { TwoWayBindingComponent } from './componentes/two-way-binding/two-way-binding.component';
+import { InfoListaAPIComponent } from './componentes/info-lista-api/info-lista-api.component';
+import { DetalhesItemComponent } from './componentes/detalhes-item/detalhes-item.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,15 @@ import { TwoWayBindingComponent } from './componentes/two-way-binding/two-way-bi
     InfoListaComponent,
     AdicionarAnimalComponent,
     PipesComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    InfoListaAPIComponent,
+    DetalhesItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
